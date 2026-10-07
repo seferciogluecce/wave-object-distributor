@@ -9,10 +9,9 @@ public sealed class WaveObjectDistributorEditor : Editor
 
     public override void OnInspectorGUI()
     {
-        EditorGUILayout.HelpBox(
-            "Distributes direct children along local X and offsets them on local Y with a sine wave. " +
-            "The component applies live in Edit Mode during validation and in Play Mode every frame.",
-            MessageType.Info);
+        EditorGUILayout.LabelField(
+            "Distribute child objects along an axis with optional wave and randomized motion.",
+            EditorStyles.wordWrappedMiniLabel);
 
         DrawDefaultInspector();
 
@@ -33,7 +32,7 @@ public sealed class WaveObjectDistributorEditor : Editor
                 }
             }
 
-            if (GUILayout.Button(new GUIContent("Apply Layout Now", "Refresh children and immediately apply the wave layout.")))
+            if (GUILayout.Button(new GUIContent("Apply Layout", "Refresh children and immediately apply the wave layout.")))
             {
                 foreach (Object targetObject in targets)
                 {
