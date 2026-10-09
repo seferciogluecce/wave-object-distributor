@@ -1,6 +1,6 @@
 # Wave Object Distributor
 
-Wave Object Distributor is a Unity component and custom Inspector for arranging a parent GameObject's direct children along local X, then applying sine-wave displacement along local Y. It can be used for static Edit Mode layout, optional Edit Mode animation previews, and runtime wave animation in Play Mode.
+Wave Object Distributor arranges a parent GameObject's direct children along local X and applies sine-wave motion along local Y. It brings static object arrangements into motion with configurable wave and randomized movement, supporting both Edit Mode previews and runtime animation.
 
 ![Wave Object Distributor arranging cloud objects into a sine wave](Media/wave-object-distributor-hero.gif)
 
@@ -98,7 +98,7 @@ These variations are deterministic for the same seed, settings, and child order.
 - The tool does not create or generate child objects.
 - `Randomize Seed` does not use Unity's global random state.
 
-## Limitations / Scope
+## Limitations
 
 - No automatic baseline capture or restore system is included.
 - Disabling or removing the component does not restore prior child positions.
@@ -108,8 +108,24 @@ These variations are deterministic for the same seed, settings, and child order.
 
 ## Compatibility
 
-- Tested with Unity `6000.3.15f1`.
+Tested with Unity `6000.3.15f1`.
+
+## 7 Tools in 7 Days — Day 7
+
+This tool is part of the **7 Tools in 7 Days** series.
+
+[Read the Day 7 development story on Substack](https://ecesefercioglu.substack.com/p/7-tools-in-7-days-day-7-wave-object)
+
+| Day | Tool |
+| --- | --- |
+| Day 1 | [Parent From Bounds](https://github.com/seferciogluecce/parent-from-bounds) |
+| Day 2 | [Separate Mesh Bodies](https://github.com/seferciogluecce/separate-mesh-bodies) |
+| Day 3 | [Brick Wall Generator](https://github.com/seferciogluecce/brick-wall-generator) |
+| Day 4 | [Particle System Context Previewer](https://github.com/seferciogluecce/particle-system-context-previewer) |
+| Day 5 | [Object Layout Tool](https://github.com/seferciogluecce/object-layout-tool) |
+| Day 6 | [DOTween Selection Animation Previewer](https://github.com/seferciogluecce/dotween-selection-animation-previewer) |
+| **Day 7** | **[Wave Object Distributor](https://github.com/seferciogluecce/wave-object-distributor)** |
 
 ## License
 
-MIT License. See `LICENSE`.
+This project is available under the MIT License. See [LICENSE](LICENSE).
